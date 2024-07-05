@@ -1,0 +1,43 @@
+input:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+textarea {
+    white-space: pre-line;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+textarea::-moz-placeholder,
+input::-moz-placeholder {
+    font-size: 12px;
+}
+
+textarea::placeholder,
+input::placeholder {
+    font-size: 12px;
+}
+
+.errorMessage {
+    color: rgb(233, 97, 97);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+}
+nav ul li {
+    padding: 25px 0px;
+    font-size: 14px;
+} /*# sourceMappingURL=variable.css.map */

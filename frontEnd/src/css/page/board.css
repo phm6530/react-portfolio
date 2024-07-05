@@ -1,0 +1,21 @@
+.BoardReplyForm {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 2em;
+}
+.BoardReplyForm .formInputDiv {
+  width: 100%;
+  border: 1px solid #c6c6c6;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.BoardReplyForm .formInputDiv span {
+  position: absolute;
+  left: 10px;
+  top: -10px;
+  padding: 0px 10px;
+  display: block;
+}/*# sourceMappingURL=board.css.map */

@@ -1,0 +1,15 @@
+.alert {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    z-index: 9999;
+}
+
+.alert_success {
+    background-color: rgb(20, 204, 164);
+}
+
+.alert_falid {
+    background-color: rgb(238, 41, 27);
+}

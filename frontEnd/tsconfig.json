@@ -1,0 +1,26 @@
+{
+    "extends": "./tsconfig.paths.json",
+    "compilerOptions": {
+        "target": "esnext" /* 최신 ES 버전을 사용 */,
+        "module": "ESNext" /* Vite는 ESM을 기본으로 사용하므로 이 옵션이 유효합니다 */,
+        "lib": [
+            "dom",
+            "DOM.Iterable",
+            "esnext"
+        ] /* 브라우저 환경에서 사용할 라이브러리 설정 */,
+        "jsx": "react-jsx" /* React 프로젝트일 경우 JSX 설정 */,
+        "rootDir": "./src" /* 소스 파일의 루트 디렉토리 */,
+        "outDir": "./dist" /* 출력 디렉토리 (Vite에서 사용되지 않음) */,
+        "strict": true /* 엄격한 타입 검사 */,
+        "esModuleInterop": true /* CommonJS 모듈을 ESM으로 가져오기 위한 설정 */,
+        "forceConsistentCasingInFileNames": true /* 파일 이름 대소문자 일관성 보장 */,
+        "skipLibCheck": true /* 라이브러리 파일 검사 건너뛰기 */,
+        "moduleResolution": "node" /* 모듈 해상도 전략을 Node.js 스타일로 설정 */,
+        "isolatedModules": true /* 개별 파일을 모듈로 취급 (Vite에서 필요) */,
+        "noEmitOnError": false /*에러시 컴파일 안됨*/,
+        "allowJs": true
+    },
+    "include": ["src"],
+    "exclude": ["node_modules"]
+    // "exclude": ["node_modules", "src/features/Myschedule"]
+}

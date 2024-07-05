@@ -1,0 +1,52 @@
+// layOut
+$dark-bgcolor: #000;
+$dark-textColor: #fff;
+
+// color
+$error-Message-color: rgb(233, 97, 97);
+$trand-color-1: #7564f5;
+
+$boxShadow-type-1: 7px 8px 42.7px rgba(199, 198, 217, 0.19);
+
+input:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+textarea {
+    white-space: pre-line;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+textarea::placeholder,
+input::placeholder {
+    font-size: 12px;
+}
+
+// Toast Alert
+.errorMessage {
+    color: $error-Message-color;
+}
+
+// nav
+nav {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    ul {
+        display: flex;
+        li {
+            margin-left: 30px;
+            padding: 25px 0px;
+            font-size: 14px;
+        }
+    }
+}

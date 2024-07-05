@@ -1,0 +1,59 @@
+// Schedule
+.categoryTitle {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #3d3d3d;
+    margin-bottom: 0.2rem;
+}
+
+.custumDaypicker {
+    box-sizing: border-box;
+    background: #ffffff;
+    // border: 1px solid rgba(224, 158, 225, 0.16);
+    // box-shadow: 7px 8px 42.7px rgba(199, 198, 217, 0.19);
+    border-radius: 37px;
+    margin: 0 !important;
+    .rdp-cell {
+        padding-bottom: 0.5rem !important;
+    }
+
+    .rdp-caption {
+        margin-bottom: 1.5rem !important;
+    }
+
+    .rdp-caption_label,
+    .rdp-weeknumber,
+    .rdp-day {
+        color: #b1b7c4 !important;
+    }
+    .rdp-head_cell {
+        color: #ffffffe6 !important;
+        font-weight: normal !important;
+    }
+
+    .rdp-day_selected {
+        color: #fff !important;
+    }
+    .rdp-nav_button {
+        background: rgba(255, 255, 255, 0.05) !important;
+        margin: 0 4px !important;
+        .rdp-nav_icon {
+            color: #fff !important;
+        }
+    }
+}
+
+// DayPicker
+.bookedDay {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        background: #ffa5ca;
+        width: 3px;
+        border-radius: 100%;
+        height: 3px;
+        bottom: 3px;
+    }
+}

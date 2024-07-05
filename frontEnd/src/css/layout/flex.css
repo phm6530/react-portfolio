@@ -1,0 +1,28 @@
+.FlexWrapDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+} 
+.flex-row-wrap {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.flex-column-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.calendar {
+  width: 50%;
+}
+
+.widthtest {
+  width: 30px;
+}/*# sourceMappingURL=flex.css.map */

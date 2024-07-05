@@ -1,0 +1,127 @@
+.btn-submit {
+  height: 2.4rem;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 3rem;
+  margin: 0.4rem;
+  background: var(--background-category-color);
+}
+
+.btn-upload {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  padding: 0.3rem 0.4rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn-upload:active {
+  background: rgba(0, 0, 0, 0.05);
+}
+.btn-upload svg {
+  margin-left: 0.5rem;
+}
+
+.btn-confirm {
+  background: rgb(114, 100, 239);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 3em;
+  width: 100%;
+}
+
+.btn-mainSubmit {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+  border-radius: 5rem;
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.5rem 0.5rem 1.3rem;
+  background: #000;
+  color: #fff;
+  box-shadow: 0 5px 15px 5px rgba(16, 16, 16, 0.14), inset 0 -2px 0 0 rgba(16, 16, 16, 0.36);
+}
+.btn-mainSubmit .submit_Icon {
+  border-radius: 100%;
+  margin: 0.3rem;
+  margin-left: 1rem;
+}
+.btn-mainSubmit .submit_Icon svg {
+  font-size: 1.4rem;
+  color: #fff;
+}
+.btn-mainSubmit:active {
+  box-shadow: 0 5px 15px 5px rgba(16, 16, 16, 0.24), inset 0 -2px 5px 0 rgba(16, 16, 16, 0.56);
+}
+.btn-mainSubmit:disabled {
+  opacity: 0.5;
+}
+
+.cancelButton {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+  border-radius: 5rem;
+  font-size: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.5rem 0.5rem 1.3rem;
+}
+.cancelButton .submit_Icon {
+  border-radius: 100%;
+  margin: 0.3rem;
+  margin-left: 1rem;
+}
+.cancelButton .submit_Icon svg {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.btn-popupTrigger {
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  border-radius: 5em;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-popupTrigger img {
+  width: 30px;
+}
+
+.btn-scheduleControl {
+  font-size: 12px;
+  letter-spacing: -0.5px;
+  padding: 7px 15px;
+  margin-right: 5px;
+  /* border: 1px solid rgb(194, 194, 195); */
+  color: #4a5875;
+  border: 1px solid rgba(125, 135, 156, 0.3215686275);
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn-borderStyle {
+  position: relative;
+  border-radius: 3rem;
+  border: 2px solid transparent;
+  font-size: 14px;
+  border: 1px solid;
+  padding: 0.6rem 3.3rem;
+  margin-top: 5.3rem;
+}
+.btn-borderStyle svg {
+  margin-left: 0.5rem;
+}
+.btn-borderStyle:hover {
+  font-weight: bold;
+}/*# sourceMappingURL=button.css.map */

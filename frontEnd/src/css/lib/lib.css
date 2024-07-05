@@ -1,0 +1,104 @@
+@charset "UTF-8";
+.circular-pbar {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    --p: 0;
+    background: conic-gradient(#ae8aed, #c57e90 var(--p, 0), 0, #f7f7f7);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.circular-pbar:after {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background: #fff;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.circular-pbar-counter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.6rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.ql-snow .ql-editor pre.ql-syntax {
+    border-radius: 1rem;
+}
+
+.skill_Item {
+    display: inline-block;
+    color: #555969;
+    border-radius: 4px;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-right: 0.6rem;
+    color: rgb(120, 141, 170);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.skill_Item input {
+    margin-right: 0.3rem;
+}
+.FlexColumn {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    flex-grow: 1;
+    align-items: flex-start;
+}
+
+.titleTextStyle {
+    background: linear-gradient(to left, #7264ef, #7264ef, #dd8efc);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-right: 0.5rem;
+}
+
+.swiper-pagination {
+    bottom: 10px; /* 위치 조정 */
+    left: 0;
+    position: initial !important;
+    text-align: center;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px;
+}
+
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
+
+.margin-bottom-10 {
+    margin-bottom: 10px;
+}
+
+.margin-bottom-1rem {
+    margin-bottom: 1rem;
+}
+
+.margin-bottom-2rem {
+    margin-bottom: 2rem;
+} /*# sourceMappingURL=lib.css.map */
+
+@keyframes ani {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}

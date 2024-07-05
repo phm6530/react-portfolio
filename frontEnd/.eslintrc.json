@@ -1,0 +1,67 @@
+{
+    "root": true, // 이 설정 파일이 ESLint의 최상위 설정임을 명시합니다.
+    "env": {
+        "browser": true, // 브라우저 전역 변수를 사용할 수 있도록 설정합니다.
+        "es2021": true // ES2021 문법을 사용할 수 있도록 설정합니다.
+    },
+    "plugins": [
+        "react", // React 플러그인을 사용합니다.
+        "@typescript-eslint", // TypeScript ESLint 플러그인을 사용합니다.
+        "import", // import/export 문을 다루는 데 도움을 주는 플러그인입니다.
+        // "jsx-a11y", // 접근성 관련 jsx-a11y 플러그인을 사용합니다.
+        "react-hooks", // React Hooks 관련 규칙을 제공하는 플러그인입니다.
+        "prettier" // Prettier 플러그인을 사용합니다.
+    ],
+    "extends": [
+        "eslint:recommended", // ESLint의 기본 권장 설정을 확장합니다.
+        "plugin:react/recommended", // react 플러그인의 권장 설정을 확장합니다.
+        "plugin:@typescript-eslint/recommended", // typescript-eslint 플러그인의 권장 설정을 확장합니다.
+        // "plugin:jsx-a11y/recommended", // jsx-a11y 플러그인의 권장 설정을 확장합니다. 접근성 관련 규칙을 제공합니다.
+        "plugin:react-hooks/recommended", // React Hooks 플러그인의 권장 설정을 확장합니다. Hooks 규칙을 제공합니다.
+        "prettier" // Prettier와 충돌하지 않는 ESLint 규칙을 설정합니다.
+        //"plugin:prettier/recommended" // Prettier 플러그인을 확장하며, Prettier 규칙을 ESLint 규칙으로 적용합니다. 혼자쓰면 충돌나기에 config-prettier 플러그인과 같이써야함,
+    ],
+    "parser": "@typescript-eslint/parser", // TypeScript 코드 분석을 위한 파서를 설정합니다.
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true // JSX 문법을 사용할 수 있도록 설정합니다.
+        },
+        "ecmaVersion": 12, // ECMAScript 2021 문법을 사용할 수 있도록 설정합니다.
+        "sourceType": "module" // ES6 모듈 문법을 사용할 수 있도록 설정합니다.
+    },
+
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "path": ["src"],
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
+    "rules": {
+        "react/display-name": 0, // React 컴포넌트가 displayName을 가져야 함을 요구합니다.
+        "react/jsx-key": 2, // 반복되는 JSX 엘리먼트에 key 속성이 있어야 함을 요구합니다.
+        "react/jsx-no-duplicate-props": 2, // JSX 엘리먼트에서 중복된 props 사용을 금지합니다.
+        // "react-refresh/only-export-components": [
+        //     1, // React Fast Refresh를 위해 파일에서 컴포넌트만 export하도록 경고합니다.
+        //     { "allowConstantExport": true } // 상수의 export를 허용하는 옵션입니다.
+        // ],
+        // "react/prop-types": "off", // prop-types 사용을 비활성화합니다.
+        "react/react-in-jsx-scope": "off", // Next.js 또는 Create React App과 같이 React를 import하지 않아도 JSX에서 React를 사용할 수 있도록 허용합니다.
+        // "prefer-const": ["error", { "destructuring": "all" }], // 가능한 경우 const를 사용하여 변수를 선언하는 것을 선호합니다.
+        // "@typescript-eslint/explicit-module-boundary-types": "off", // TypeScript 함수의 반환 유형이 명시적으로 선언되지 않은 경우 경고를 비활성화합니다.
+        // "@typescript-eslint/no-explicit-any": "off" // any 타입의 사용을 비활성화합니다.
+        "prettier/prettier": [
+            "error",
+            {
+                "endOfLine": "auto"
+            }
+        ],
+        // "no-unused-vars": ["error", { "varsIgnorePattern": "^_" }],
+        "@typescript-eslint/no-this-alias": "error",
+        "react/prop-types": "off"
+    },
+    "globals": {
+        "JSX": true
+    }
+}
