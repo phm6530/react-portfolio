@@ -28,8 +28,6 @@ function App(): JSX.Element {
         }
     }, []);
 
-    console.log('Main 수정중..');
-
     return (
         <>
             {/* redux */}
