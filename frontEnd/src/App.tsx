@@ -21,7 +21,8 @@ function App(): JSX.Element {
     // 초기 다크모드 트랜지션효과 방지
     useAddTransition();
 
-    console.log('main 수정중..');
+    console.log('Main 로직 추가');
+    console.log('Main 로직 추가');
 
     //스크롤 비활성화
     useEffect(() => {
