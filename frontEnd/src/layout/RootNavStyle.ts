@@ -159,7 +159,7 @@ export const LinkWrapper = styled.div<{ $toggle: boolean }>`
     }
 `;
 
-export const UiStyle = styled.ul<{ $link?: boolean }>`
+export const UiStyle = styled.div<{ $link?: boolean }>`
     display: flex;
     align-items: center;
     ${({ $link }) => $link && 'margin-right : 4rem;'}

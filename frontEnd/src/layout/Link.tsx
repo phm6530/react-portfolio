@@ -9,7 +9,7 @@ interface LinkProps {
     active?: boolean;
 }
 
-const LiStyle = styled.li<{ $not?: boolean }>`
+const LiStyle = styled.div<{ $not?: boolean }>`
     margin-left: 30px;
     padding: 25px 0px;
     font-size: 14px;
