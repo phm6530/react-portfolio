@@ -110,7 +110,7 @@ const DashBoard: React.FC<DashBoardProps> = ({
     return (
         <PageBanner className={className}>
             {/* 백그라운드 */}
-            <BackgroundImgCover imgSrc="/img/4.jpg">
+            <BackgroundImgCover imgSrc="/img/Main_bg.webp">
                 <StarAnimation />
                 {/* <ShootingStar /> <Star id="main"></Star> */}
             </BackgroundImgCover>

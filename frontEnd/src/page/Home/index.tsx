@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <>
             <S.HomeContainer>
-                <BackgroundImgCover mainPage={true} imgSrc="/img/4.jpg">
+                <BackgroundImgCover mainPage={true} imgSrc="/img/Main_bg.webp">
                     <ShootingStar />
                 </BackgroundImgCover>
 
