@@ -38,6 +38,7 @@ const fetchPostRelated = async (
     const { resData } = await requestHandler<ApiResData<BlogPostRelated[]>>(
         () => axios.get(`${ENDPOINT_URL}/blog/posts/${postId}/related`),
     );
+
     return resData;
 };
 

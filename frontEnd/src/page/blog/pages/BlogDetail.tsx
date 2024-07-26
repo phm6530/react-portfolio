@@ -101,7 +101,7 @@ const BlogDetail = (): JSX.Element => {
                             )}
                         </S.QuillViewWrapper>
 
-                        <BlogPostRelatedList />
+                        <BlogPostRelatedList category={data.category} />
                     </div>
                 </>
             )}

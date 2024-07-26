@@ -26,13 +26,17 @@ const SubCategory = styled.div`
     margin-bottom: 1rem;
 `;
 
-const BlogPostRelatedList = (): JSX.Element => {
+const BlogPostRelatedList = ({
+    category,
+}: {
+    category: string;
+}): JSX.Element => {
     const { key: postId } = useParams();
 
     const { data } = useQuery<BlogPostRelated[]>({
-        queryKey: [queryKey.blogRelated],
+        queryKey: [queryKey.blogRelated, category],
         queryFn: () => fetchPostRelated(postId),
-        enabled: !!postId,
+        // enabled: !!postId,
         staleTime: 5 * 60 * 1000,
     });
 
