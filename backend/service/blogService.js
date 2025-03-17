@@ -11,7 +11,7 @@ const getNewPostList = async (conn) => {
         create_at,
         (
             CASE
-                WHEN create_at >= CURRENT_DATE - INTERVAL 2 DAY THEN 1
+                WHEN create_at >= CURRENT_DATE - INTERVAL 7 DAY THEN 1
                 ELSE 0
             END
         ) AS post_new
@@ -46,8 +46,6 @@ const postInsert = async (conn, body, id) => {
         category_id[0].category_id,
         subCategory_id[0].subcategory_id,
     ]);
-
-    console.log(meta_result);
 
     const postId = meta_result.insertId;
 
