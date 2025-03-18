@@ -7,6 +7,8 @@ import SummaryData from 'component/ui/PostTimestamp';
 import { BlogMainContentsItemProps } from '@type/BlogTypes';
 import { IMG_URL } from 'constants/apiUrl';
 import { device } from 'config/DeviceConfig';
+import PostNewIcon from 'component/ui/PostNewIcon';
+import { DateUtils } from 'utils/dateUtil';
 
 const ProjectFadeinStyle = styled(FadeInAnimation)`
     /* margin-bottom: 1.5rem; */
@@ -97,6 +99,7 @@ const BlogContentsItem: React.FC<{ item: BlogMainContentsItemProps }> = ({
                 <ProjectItemHeaderStyle>
                     {/* <HasTagCustom>{subcategory}</HasTagCustom> */}
                     {post_title}
+                    {DateUtils.isNew(date) && <PostNewIcon />}
                 </ProjectItemHeaderStyle>
 
                 {/* Company */}

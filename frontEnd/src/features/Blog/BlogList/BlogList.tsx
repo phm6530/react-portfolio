@@ -10,6 +10,8 @@ const BlogList = (): JSX.Element => {
     const [searchParams] = useSearchParams();
     const search: string = searchParams.get('search') || 'all';
 
+    console.log(data);
+
     return (
         <>
             {isLoading ? (

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { format } from 'date-fns';
+import { DateUtils } from 'utils/dateUtil';
 
 const PostLastUpdate = styled.span`
     font-size: 13px;
@@ -25,7 +25,7 @@ const PostTimestamp: React.FC<SummaryDataProps> = ({
     return (
         <PostLastUpdate className={className} {...rest}>
             {message && <span>{message}</span>}
-            {format(date, 'yyyy. MM. dd HH:mm:ss')}
+            {DateUtils.dateFormatKR(date, 'YYYY. MM. DD HH:mm:ss')}
         </PostLastUpdate>
     );
 };

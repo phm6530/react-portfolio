@@ -4,6 +4,7 @@ import BlogTab from '@features/Blog/BlogTab.js/BlogTab';
 import BlogNewPostList from 'features/Blog/BlogNewPostList/BlogNewPostList';
 import BlogList from '@features/Blog/BlogList/BlogList';
 import BlogSUbCategoryTitle from '@features/Blog/BlogSubCategoryTitle';
+
 const BlogPage = (): JSX.Element => {
     return (
         <>
